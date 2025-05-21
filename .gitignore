@@ -1,0 +1,34 @@
+# IDE 설정 파일
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 운영체제 파일
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 빌드 결과물
+dist/
+build/
+
+# 의존성 디렉토리
+node_modules/
+bower_components/
+
+# 임시 파일
+*.tmp
+*.temp
+.cache/
+
+# 환경 설정 파일
+.env
+.env.local
+.env.*.local
+
+# 크롬 익스텐션 패키지 파일
+*.crx
+*.pem 
