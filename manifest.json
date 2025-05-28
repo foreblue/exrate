@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Chrome Extension",
+  "name": "네이버 환율 조회",
   "version": "1.0",
-  "description": "크롬 익스텐션 기본 구조",
+  "description": "네이버 금융에서 실시간 환율 정보를 조회하는 크롬 익스텐션",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -11,7 +11,12 @@
       "128": "images/icon128.png"
     }
   },
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://finance.naver.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },

@@ -1,22 +1,178 @@
 body {
-  width: 300px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+  width: 400px;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
 }
 
 .container {
-  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
 h1 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 20px;
+  color: #1a73e8;
+  margin: 0 0 16px 0;
+  text-align: center;
 }
 
-#content {
-  padding: 10px;
-  background-color: #f5f5f5;
+h2 {
+  font-size: 16px;
+  color: #5f6368;
+  margin: 0 0 8px 0;
+}
+
+/* 즐겨찾기 섹션 */
+.favorites-section {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.favorite-item {
+  background-color: #e8f0fe;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #1a73e8;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.favorite-item:hover {
+  background-color: #d2e3fc;
+}
+
+/* 환율 조회 섹션 */
+.exchange-section {
+  margin-bottom: 16px;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.select-group {
+  flex: 1;
+}
+
+.select-group label {
+  display: block;
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dadce0;
   border-radius: 4px;
-  margin-top: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.swap-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.swap-btn:hover {
+  background-color: #1557b0;
+}
+
+/* 환율 계산기 */
+.calculator {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+input[type="number"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202124;
+  text-align: right;
+}
+
+/* 환율 정보 */
+.rate-info {
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 16px;
+}
+
+.current-rate, .last-updated {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* 버튼 */
+.favorite-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.favorite-btn:hover {
+  background-color: #1557b0;
+}
+
+/* 오류 메시지 */
+.error-message {
+  color: #d93025;
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: center;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
 } 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 원 -->
+  <circle cx="64" cy="64" r="60" fill="#4CAF50"/>
+  
+  <!-- 달러 기호 -->
+  <text x="64" y="80" font-family="Arial" font-size="60" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  
+  <!-- S 기호 -->
+  <path d="M48 64C48 64 56 56 64 56C72 56 80 64 80 64C80 64 72 72 64 72C56 72 48 64 48 64" stroke="white" stroke-width="8" stroke-linecap="round"/>
+</svg> 
