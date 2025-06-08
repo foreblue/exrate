@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 여기에 팝업이 열릴 때 실행될 코드를 작성합니다
   console.log('Extension popup opened');
-  
-  // 예시: content div에 메시지 추가
-  const contentDiv = document.getElementById('content');
-  contentDiv.textContent = '익스텐션이 성공적으로 로드되었습니다!';
 });
 
 // DOM 요소 가져오기
@@ -105,9 +101,9 @@ function addToFavorites() {
 // 환율 계산 함수
 function calculateExchange(amount, rate) {
   if (isNaN(amount) || isNaN(rate) || rate === 0) {
-    return '0.00';
+    return '0';
   }
-  return (amount * rate).toFixed(2);
+  return formatNumber(Math.round(amount * rate));
 }
 
 // UI 업데이트 함수
@@ -115,7 +111,7 @@ function updateUI(data, amount) {
   const { rate, fromCurrency, toCurrency, timestamp } = data;
   const converted = calculateExchange(amount, rate);
 
-  exchangeRateSpan.textContent = `1 ${fromCurrency} = ${rate.toFixed(2)} ${toCurrency}`;
+  exchangeRateSpan.textContent = `1 ${fromCurrency} = ${formatNumber(rate)} ${toCurrency}`;
   convertedAmountSpan.textContent = converted;
   updateTimeSpan.textContent = new Date(timestamp).toLocaleString();
   baseCurrencyLabel.textContent = fromCurrency;
@@ -159,6 +155,11 @@ async function fetchAndUpdateExchangeRate() {
     console.error('Error fetching or updating exchange rate:', error);
     showError(error.message || '환율 정보를 가져오는데 실패했습니다.');
   }
+}
+
+// 숫자 포맷팅 함수 추가
+function formatNumber(number) {
+    return Math.round(number).toLocaleString('ko-KR');
 }
 
 // 이벤트 리스너 설정
