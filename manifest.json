@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "네이버 환율 조회",
-  "version": "1.0",
-  "description": "네이버 금융에서 실시간 환율 정보를 조회하는 크롬 익스텐션",
+  "name": "실시간 환율 조회",
+  "version": "1.2",
+  "description": "실시간 환율 조회는 브라우저에서 바로 실시간 환율을 확인하고 계산할 수 있는 확장프로그램입니다.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

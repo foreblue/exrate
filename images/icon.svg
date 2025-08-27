@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- 배경 원 -->
-  <circle cx="64" cy="64" r="60" fill="#4CAF50"/>
+  <!-- 원형 테두리 -->
+  <circle cx="64" cy="64" r="60" stroke="#666" stroke-width="4" fill="none"/>
   
   <!-- 달러 기호 -->
-  <text x="64" y="80" font-family="Arial" font-size="60" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  <text x="40" y="80" font-family="Arial" font-size="60" font-weight="bold" fill="#4CAF50" text-anchor="middle">$</text>
   
-  <!-- S 기호 -->
-  <path d="M48 64C48 64 56 56 64 56C72 56 80 64 80 64C80 64 72 72 64 72C56 72 48 64 48 64" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <!-- 원화 기호 -->
+  <text x="88" y="80" font-family="Arial" font-size="60" font-weight="bold" fill="#2196F3" text-anchor="middle">₩</text>
+  
+  <!-- 화살표 -->
+  <path d="M50 40 L78 40" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  <path d="M70 30 L78 40 L70 50" stroke="#666" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg> 
